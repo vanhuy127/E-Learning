@@ -1,0 +1,38 @@
+.intergration {
+    max-width: 1490px;
+    margin: 0 15px;
+    margin: 0 auto 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-brand {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 85px;
+        align-items: center;
+        max-width: 480px;
+    }
+
+    &-content {
+        width: 100%;
+        max-width: 680px;
+        font-family: $font-secondary;
+    }
+
+    &-heading {
+        width: 100%;
+        max-width: 480px;
+        font-weight: 700;
+        line-height: 160%;
+        margin-bottom: 30px;
+    }
+    &-text{
+        margin-bottom: 44px;
+    }
+    &-btn{
+        padding: 20px 42px;
+        color: $secondary-color;
+        border: 1px solid currentColor;
+    }
+}

@@ -1,0 +1,109 @@
+.footer {
+    width: 100%;
+    padding: 75px 15px 40px;
+    // min-height: 590px;
+    background-color: $gray-darker;
+    color: $blue-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-banner {
+        max-width: 388px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 95px;
+    }
+
+    &-desc {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding-left: 41px;
+        margin-left: 41px;
+        border-left: 1px solid;
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 39px;
+        letter-spacing: 0.04em;
+        margin-bottom: 20px;
+    }
+
+    &-subscribe {
+        display: flex;
+        gap: 0 20px;
+        align-items: center;
+        margin-bottom: 95px;
+    }
+
+    &-input {
+        width: 400px;
+        height: 60px;
+        border: 1px solid #83839A;
+        border-radius: 80px;
+        padding: 0 30px;
+        font-size: 20px;
+
+        &::placeholder {
+            font-size: 20px;
+            color: #83839A;
+        }
+    }
+
+    &-btn {
+        position: relative;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        color: #FFFFFF;
+        padding: 14px 34px;
+        background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);
+        border-radius: 60px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 151px;
+            height: 29px;
+            background: red;
+            bottom: 0;
+            transform: translateX(-13%);
+            border-radius: 60px;
+            background: #545AE8;
+            opacity: 0.5;
+            filter: blur(27px);
+        }
+    }
+
+    &-links {
+        margin-bottom: 20px;
+    }
+
+    &-link {
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        padding: 0 20px;
+        color: $blue-light;
+    }
+}
+
+.line-custom {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 17px;
+        background: #626381;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+}
